@@ -5,7 +5,7 @@ import Portfolio from '../assets/img/portfolio.png';
 import VideoX from '../assets/img/videox.png';
 import LiveTV from '../assets/img/LiveTV.png';
 import NetflixClone from '../assets/img/netflixclone.png';
-import IMDB from '../assets/img/netflixclone.png';
+import IMDB from '../assets/img/IMDB.png';
 import ToDo from '../assets/img/todolist.png';
 import ImageGallary from '../assets/img/ImageGallary.png';
 import Logic from '../assets/img/logic.png';
