@@ -28,10 +28,8 @@ const Skills = () => {
                     Skills
                   </h1>
                   <p className="font-poppins text-center">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                    <br /> Lorem Ipsum has been the industry's standard dummy
-                    text.
+                  I excel in JavaScript (ES6), TypeScript, HTML5, and Tailwind/CSS3, and have extensive experience in the React JS ecosystem, including React-Native for mobile app development on iOS and Android platforms.
+                    <br />⭐ APPRISING MERN STACK DEVELOPER ⭐
                   </p>
                   <div className="group flex justify-center flex-wrap my-5">
                     <Skillsbox value={newskills}></Skillsbox>
