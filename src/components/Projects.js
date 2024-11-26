@@ -85,9 +85,8 @@ const Projects = () => {
       <div className="flex flex-col items-center justify-center px-12 py-14 xlx:mx-20 lgx:mx-10 mdx:7 msx:mx-7">
         <h1 className="text-5xl font-centra font-bold mb-5 ">Projects</h1>
         <p className="font-poppins text-center mb-6">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-          <br /> Lorem Ipsum has been the industry's standard dummy text.
+        “Done is better than perfect.”
+          <br /> Here, You Find Some Project's Done By Me.. 😊
         </p>
         <div className="grid grid-cols-3 gap-4 w-full  lgx:grid-cols-2 smx:grid-cols-1">
           <ProjectCard value={details[0]}></ProjectCard>
