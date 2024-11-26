@@ -82,7 +82,7 @@ const details = [
 const Projects = () => {
   return (
     <section id="Projects" className="text-white bg-black relative">
-      <div className="flex flex-col items-center justify-center px-12 py-14 xlx:mx-20 lgx:mx-10 mdx:7 msx:mx-7">
+      <div className="flex flex-col items-center justify-center px-12 py-14 xlx:mx-20 lgx:mx-10 mdx:7 msx:mx-1 msx:px-4">
         <h1 className="text-5xl font-centra font-bold mb-5 ">Projects</h1>
         <p className="font-poppins text-center mb-6">
         “Done is better than perfect.”
