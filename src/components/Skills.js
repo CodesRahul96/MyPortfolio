@@ -9,12 +9,15 @@ const Skills = () => {
     'CSS',
     'JavaScript',
     'Reactjs',
+    'Nodejs',
+    'MongoDB',
     'GIT',
     'GitHub',
-    'Resposive Design',
     'Tailwind Css',
     'Material UI',
-    'PhotoShop',
+    'Resposive Design',
+    'Canva',
+    'Photoshop',
   ];
   return (
     <>

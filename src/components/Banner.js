@@ -1,9 +1,29 @@
-import React from 'react';
-import { TypeAnimation } from 'react-type-animation';
-import astro from '../assets/img/header-img.svg';
-import ar1 from '../assets/img/arrow2.svg';
+import React from "react";
+import { TypeAnimation } from "react-type-animation";
+import astro from "../assets/img/header-img.svg";
+import ar1 from "../assets/img/arrow2.svg";
 
 const Banner = () => {
+  const Typing = () => {
+    return (
+      <TypeAnimation
+        className=" text-white z-40"
+        sequence={[
+          "Web Developer", // Types 'One'
+          3000, // Waits 1s
+          "",
+          2000,
+          "Web Designer",
+          3000, // Waits 2s
+        ]}
+        wrapper="div"
+        speed={5}
+        cursor={true}
+        repeat={Infinity}
+      />
+    );
+  };
+
   return (
     <div
       id="Home"
@@ -16,16 +36,22 @@ const Banner = () => {
               className="text-xl font-poppins inline-block font-medium py-2 px-2.5  border border-white  text-white mb-4"
               style={{
                 background:
-                  'linear-gradient(90.21deg,rgba(170,54,124,.5) -5.91%,rgba(74,47,189,.5) 111.58%)',
+                  "linear-gradient(90.21deg,rgba(170,54,124,.5) -5.91%,rgba(74,47,189,.5) 111.58%)",
               }}
             >
               Welcome to My World 🌍
             </span>
-            <h1 className="text-6xl text-white font-centra font-black">
-              Hi! I'm Codes Rahul<Typing></Typing>
+            <h1 className="text-5xl text-white font-centra font-black">
+              Hi! I'm Codes Rahul
+              <Typing></Typing>
             </h1>
             <p className="text-[#b8b8b8] flex-wrap font-poppins py-6">
-            I'm Front-end developer with proven ability to design and develop JavaScript-based applications for web or mobile environments. Strong knowledge of React JS, React Native, JavaScript/TypeScript, Tailwind/CSS. Experienced in all stages of interface component design, from conception to final testing and deployment of web-responsive applications.
+              I'm Front-end developer with proven ability to design and develop
+              JavaScript-based applications for web or mobile environments.
+              Strong knowledge of React JS, React Native, JavaScript/TypeScript,
+              Tailwind/CSS. Experienced in all stages of interface component
+              design, from conception to final testing and deployment of
+              web-responsive applications.
             </p>
             <span>
               <a href="#Contact">
@@ -44,26 +70,6 @@ const Banner = () => {
         </div>
       </div>
     </div>
-  );
-};
-
-const Typing = () => {
-  return (
-    <TypeAnimation
-      className=" text-white z-40"
-      sequence={[
-        'Web Developer', // Types 'One'
-        3000, // Waits 1s
-        '',
-        2000,
-        'Web Designer',
-        3000, // Waits 2s
-      ]}
-      wrapper="div"
-      speed={5}
-      cursor={true}
-      repeat={Infinity}
-    />
   );
 };
 

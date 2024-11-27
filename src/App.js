@@ -4,7 +4,7 @@ import Banner from './components/Banner';
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import Connect from './components/Connect';
+import Contact from './components/Contact';
 import FooterSec from './components/FooterSec';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Banner></Banner>
       <Skills></Skills>
       <Projects></Projects>
-      <Connect></Connect>
+      <Contact></Contact>
       <FooterSec></FooterSec>
     </div>
   );

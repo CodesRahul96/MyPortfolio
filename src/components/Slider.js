@@ -1,17 +1,34 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import css3 from '../assets/img/css-3.png';
-import html5 from '../assets/img/html.png';
-import js from '../assets/img/js.png';
-import reactpn from '../assets/img/physics.png';
-import ps from '../assets/img/ps.png';
-import tailwind from '../assets/img/tail.svg';
-import git from '../assets/img/Git.png';
-import github from '../assets/img/githu.png';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import css3 from "../assets/img/css.png";
+import html from "../assets/img/html.png";
+import js from "../assets/img/javascript.png";
+import reactjs from "../assets/img/reactjs.png";
+import ps from "../assets/img/ps.png";
+import tailwind from "../assets/img/tail.svg";
+import git from "../assets/img/Git.png";
+import github from "../assets/img/githu.png";
+import nodejs from "../assets/img/nodejs.png";
+import mongo from "../assets/img/mongodb.png";
+import canva from "../assets/img/canva.png";
+import material from "../assets/img/material-ui.png";
 
-const images = [css3, html5, js, reactpn, ps, tailwind, git, github];
+const images = [
+  css3,
+  html,
+  js,
+  reactjs,
+  nodejs,
+  mongo,
+  git,
+  github,
+  canva,
+  tailwind,
+  material,
+  ps,
+];
 
 const SliderBox = () => {
   const settings = {
@@ -54,10 +71,10 @@ const SliderBox = () => {
   return (
     <div className="text-white relative mx-auto max-w-3xl items-center mt-10">
       <Slider {...settings}>
-        {images.map((im) => {
+        {images.map((im, index) => {
           return (
-            <div key={im}>
-              <img src={im} className={'mx-auto px-3 h-32'} alt=""></img>
+            <div key={index}>
+              <img src={im} className={"mx-auto px-3 h-32"} alt="slide_img"></img>
             </div>
           );
         })}
