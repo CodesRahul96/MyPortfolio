@@ -16,9 +16,9 @@ const ProjectCard = ({ value }) => {
     <div
       onMouseEnter={entered}
       onMouseLeave={left}
-      className="group  rounded-xl flex items-center justify-center "
+      className="group rounded-xl flex items-center justify-center "
     >
-      <div className=" rounded-xl relative overflow-hidden h-full flex items-center justify-center ">
+      <div className=" rounded-xl relative overflow-hidden h-full flex items-center justify-center object-cover ">
         <div
           style={{
             background:
