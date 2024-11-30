@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const Contact = () => {
   const inpsty =
     '`bg-white/10 col-span-2 text-white placeholder:text-white px-4 py-5 rounded-[7px] mb-[8px] mr-[8px] border border-white/50 ease-in-out duration-300 focus:outline-none  focus:bg-white focus:text-black focus:placeholder:text-black/50`';
@@ -13,10 +14,10 @@ const Contact = () => {
     toast
       .promise(
         emailjs.sendForm(
-          'service_n5orn75',
-          'template_whvxq4x',
+         process.env.REACT_APP_ServiceKey,
+          process.env.REACT_APP_TemplateKey,
           e.target,
-          'NlyDyMDEYHsvT_9n4'
+          process.env.REACT_APP_SecretKey
         ),
         {
           pending: 'Sending Mail....',
