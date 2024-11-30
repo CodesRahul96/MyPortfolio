@@ -55,9 +55,9 @@ const Banner = () => {
             </p>
             <span>
               <a href="#Contact">
-                <button className="text-xl text-white font-semibold font-centra flex items-center">
+                <button className="text-xl text-white font-semibold font-centra flex items-center transition ease-in-out duration-500 hover:-translate-y-1 hover:scale-110">
                   Let's Connect
-                  <img alt="" src={ar1} className="h-4 pl-2"></img>
+                  <img alt="" src={ar1} className="h-4 pl-2 "></img>
                 </button>
               </a>
             </span>

@@ -25,7 +25,7 @@ const Skills = () => {
         <div className="skill-cont w-full">
           <div className="skill-holder flex flex-wrap relative z-20 mb-10">
             <div className="skill-gg basis-full w-full">
-              <div className="skill-cnt text-center items-center text-white  px-12 py-14 rounded-3xl -mt-12 bg-[#151515]  mx-32 xlx:mx-20 lgx:mx-10 mdx:7 msx:mx-7">
+              <div className="skill-cnt text-center items-center text-white  px-12 py-14 rounded-3xl -mt-12 bg-[#151515]  mx-32 xlx:mx-20 lgx:mx-10 mdx:7 msx:mx-4">
                 <div className="flex flex-col items-center">
                   <h1 className="text-5xl font-centra font-bold mb-5">
                     Skills

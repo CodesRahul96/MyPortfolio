@@ -36,7 +36,7 @@ const NavBar = () => {
     <>
       <nav
         className={`navbar fixed top-0 w-full flex items-center justify-center flex-wrap h-19 z-50 py-5 ease-in-out duration-300 ${
-          scrolled ? 'py-1 bg-black' : ''
+          scrolled ? 'py-1 bg-[#030712]' : ''
         } }`}
       >
         <div className="navcontainer w-full flex items-center justify-between flex-wrap transition-all mx-28 px-3  mdx:mx-14 msx:mx-7">
@@ -109,7 +109,7 @@ const NavBar = () => {
               </div>
               <a href="#Contact">
                 <button
-                  className={`border border-white rounded font-poppins text-lg text-white font-medium px-8 ml-5 whitespace-nowrap transition-colors hover:bg-[#1da1f2] hover:text-white hover:border-transparent ease-in-out duration-300 ${
+                  className={`border border-white rounded font-poppins text-lg text-white font-medium px-6 ml-5 whitespace-nowrap transition-colors hover:bg-[#1da1f2] hover:text-white hover:border-transparent ease-in-out duration-300 ${
                     scrolled ? 'py-3' : 'py-5'
                   } `}
                 >

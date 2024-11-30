@@ -13,7 +13,7 @@ const FooterSec = () => {
         <div className="leftfoot max-w-3xl w-[40%] order-1 msx:w-full msx:order-2 msx:mt-10">
           <div className="leftfoot flex justify-start items-center">
             <img alt="" src={crlogo} style={{ maxHeight: '50px' }}></img>
-            <h1 className="text-2xl font-centra uppercase font-bold ml-3 whitespace-nowrap tracking-[1px]">
+            <h1 className="text-2xl font-centra font-bold ml-2 whitespace-nowrap tracking-[1px]">
               CodesRahul
             </h1>
           </div>
@@ -35,7 +35,7 @@ const FooterSec = () => {
               href="https://www.linkedin.com/in/codesrahul"
             >
               <img
-                className="h-5 w-5  mr-4"
+                className="h-5 w-5  mr-4 opacity-50 hover:opacity-100 hover:scale-125 transition duration-150 ease-in-out"
                 src={lnk}
                 alt="Rahul's Linkedin Profile"
               />
@@ -45,7 +45,7 @@ const FooterSec = () => {
               target="_blank"
               href="https://github.com/codesrahul"
             >
-              <img className="h-6 mr-4" alt="" src={github} />
+              <img className="h-6 mr-4 opacity-50 hover:opacity-100 hover:scale-125 transition duration-150 ease-in-out" alt="Rahul's github Profile" src={github} />
             </a>
             <a
               rel="noreferrer"
@@ -53,8 +53,8 @@ const FooterSec = () => {
               href="https://twitter.com/codesrahul"
             >
               <img
-                className="h-6 mr-4"
-                alt=""
+                className="h-6 mr-4 opacity-50 hover:opacity-100 hover:scale-125 transition duration-150 ease-in-out"
+                alt="Rahul's twitter Profile"
                 src={twitter}
               />
             </a>
@@ -63,7 +63,7 @@ const FooterSec = () => {
               target="_blank"
               href="https://www.instagram.com/codesrahul"
             >
-              <img className="h-5 mr-4" alt="" src={insg} />
+              <img className="h-5 mr-4 opacity-50 hover:opacity-100 hover:scale-125 transition duration-150 ease-in-out" alt="Rahul's instagram Profile" src={insg} />
             </a>
           </div>
         </div>
