@@ -70,7 +70,7 @@ const FooterSec = () => {
       </div>
 
       <div className=" flex py-5 font-poppins text-[11px] font-light justify-center text-[#b8b8b8]">
-        Made with ❤ by CodesRahul {year}, using REACT JS & TAILWIND CSS.
+        Made with ❤ by CodesRahul ©{year}, using REACT JS & TAILWIND CSS.
       </div>
     </footer>
   );
