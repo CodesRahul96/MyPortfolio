@@ -90,8 +90,8 @@ const Projects = () => {
         </p>
         <div className="w-full grid grid-cols-3 gap-4 lgx:grid-cols-2 smx:grid-cols-1">
           <ProjectCard value={details[0]} />
-          <ProjectCard value={details[2]} />
           <ProjectCard value={details[1]} />
+          <ProjectCard value={details[2]} />
           <ProjectCard value={details[3]} />
           <ProjectCard value={details[4]} />
           <ProjectCard value={details[5]} />
