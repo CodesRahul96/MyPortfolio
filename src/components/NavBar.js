@@ -41,7 +41,7 @@ const NavBar = () => {
       >
         <div className="navcontainer w-full flex items-center justify-between flex-wrap transition-all mx-28 px-3  mdx:mx-14 msx:mx-7">
           <a
-            href="#Home"
+            href="/"
             className="flex items-center transition ease-in-out delay-150"
           >
             <img src={crlogo} style={{ maxHeight: "60px" }} alt="logo"></img>
