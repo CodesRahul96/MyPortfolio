@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import crlogo from '../assets/img/crlogo.png';
-import nav1 from '../assets/img/nav-icon1.svg';
-import nav3 from '../assets/img/nav-icon3.svg';
-import ham from '../assets/img/hamburger.png';
-import nav2 from '../assets/img/githu.png';
-import 'animate.css';
-import HamMenu from './HamMenu';
+import React, { useState, useEffect } from "react";
+import crlogo from "../assets/img/crlogo.png";
+import nav1 from "../assets/img/nav-icon1.svg";
+import nav3 from "../assets/img/nav-icon3.svg";
+import ham from "../assets/img/hamburger.png";
+import nav2 from "../assets/img/githu.png";
+import "animate.css";
+import HamMenu from "./HamMenu";
 
 const NavBar = () => {
-  const [clicked, setClicked] = useState('Home');
+  const [clicked, setClicked] = useState("Home");
   const [scrolled, setScrolled] = useState(false);
-  const [hamt, sethamt] = useState('');
+  const [hamt, sethamt] = useState("");
   const menuclick = (e) => {
     setClicked(e.target.text);
   };
@@ -27,29 +27,39 @@ const NavBar = () => {
       }
     };
 
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll);
 
-    return () => window.removeEventListener('scroll', onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <>
       <nav
-        className={`navbar fixed top-0 w-full flex items-center justify-center flex-wrap h-19 z-50 py-5 ease-in-out duration-300 ${
-          scrolled ? 'py-1 bg-[#030712]' : ''
+        className={`navbar fixed top-0 w-full flex items-center justify-center flex-wrap h-19 z-50 py-4 ease-in-out duration-300 ${
+          scrolled ? "py-0 bg-[#030712]" : ""
         } }`}
       >
         <div className="navcontainer w-full flex items-center justify-between flex-wrap transition-all mx-28 px-3  mdx:mx-14 msx:mx-7">
-          <a href="#Home">
-            <img src={crlogo} style={{ maxHeight: '60px' }} alt=""></img>
+          <a
+            href="#Home"
+            className="flex items-center transition ease-in-out delay-150"
+          >
+            <img src={crlogo} style={{ maxHeight: "60px" }} alt="logo"></img>
+            <h2
+              className={` text-white text-xl font-bold ${
+                scrolled ? "hidden" : "block"
+              }`}
+            >
+              CodeRahul
+            </h2>
           </a>
           <div className="nav-collapse flex items-center flex-grow-1 msx:hidden">
             <div className="menu-holder ml-auto" onClick={menuclick}>
               <a
                 href="#Home"
                 className={
-                  'px-6 text-lg font-meduim font-poppins hover:text-white cursor-pointer ' +
-                  (clicked === 'Home' ? 'text-white' : 'text-[#b8b8b8]')
+                  "px-6 text-lg font-meduim font-poppins hover:text-white cursor-pointer " +
+                  (clicked === "Home" ? "text-[#1da1f2]" : "text-[#b8b8b8]")
                 }
               >
                 {`Home`}
@@ -57,8 +67,8 @@ const NavBar = () => {
               <a
                 href="#Skills"
                 className={
-                  'px-6 text-lg font-meduim font-poppins transition ease-in-out cursor-pointer hover:text-white ' +
-                  (clicked === 'Skills' ? 'text-white' : 'text-[#b8b8b8]')
+                  "px-6 text-lg font-meduim font-poppins transition ease-in-out cursor-pointer hover:text-white " +
+                  (clicked === "Skills" ? "text-[#1da1f2]" : "text-[#b8b8b8]")
                 }
               >
                 Skills
@@ -66,8 +76,8 @@ const NavBar = () => {
               <a
                 href="#Projects"
                 className={
-                  'px-6 text-lg font-meduim font-poppins cursor-pointer hover:text-white ' +
-                  (clicked === 'Projects' ? 'text-white' : 'text-[#b8b8b8]')
+                  "px-6 text-lg font-meduim font-poppins cursor-pointer hover:text-white " +
+                  (clicked === "Projects" ? "text-[#1da1f2]" : "text-[#b8b8b8]")
                 }
               >
                 Projects
@@ -97,7 +107,7 @@ const NavBar = () => {
                     ></img>
                   </a>
                 </div>
-                <div className="group circle inline-flex items-center justify-center mr-1.5 h-10 w-10 bg-gray-800/50  border border-white rounded-full transition ease-in-out hover:border-transparent hover:bg-[#1da1f2] " >
+                <div className="group circle inline-flex items-center justify-center mr-1.5 h-10 w-10 bg-gray-800/50  border border-white rounded-full transition ease-in-out hover:border-transparent hover:bg-[#1da1f2] ">
                   <a
                     rel="noreferrer"
                     target="_blank"
@@ -110,10 +120,10 @@ const NavBar = () => {
               <a href="#Contact">
                 <button
                   className={`border border-white rounded font-poppins text-lg text-white font-medium px-6 ml-5 whitespace-nowrap transition-colors hover:bg-[#1da1f2] hover:text-white hover:border-transparent ease-in-out duration-300 ${
-                    scrolled ? 'py-3' : 'py-5'
+                    scrolled ? "py-3" : "py-4"
                   } `}
                 >
-                  Let's Connect
+                  Download CV
                 </button>
               </a>
             </span>
@@ -125,7 +135,7 @@ const NavBar = () => {
                 alt=""
                 onClick={hamclick}
                 className={`inline-block z-50 h-full cursor-pointer ${
-                  hamt ? 'animate-hanim1' : 'animate-hanim2'
+                  hamt ? "animate-hanim1" : "animate-hanim2"
                 }`}
                 src={ham}
               ></img>

@@ -43,7 +43,7 @@ const FooterSec = () => {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://github.com/codesrahul"
+              href="https://github.com/codesrahul96"
             >
               <img className="h-6 mr-4 opacity-50 hover:opacity-100 hover:scale-125 transition duration-150 ease-in-out" alt="Rahul's github Profile" src={github} />
             </a>
