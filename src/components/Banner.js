@@ -7,7 +7,7 @@ const Banner = () => {
   const Typing = () => {
     return (
       <TypeAnimation
-        className=" text-white z-40"
+        className=" text-white z-40 msx:text-4xl"
         sequence={[
           "Web Developer", // Types 'One'
           3000, // Waits 1s
@@ -17,7 +17,7 @@ const Banner = () => {
           3000, // Waits 2s
           "",
           2000,
-          "Youtuber",
+          "YouTuber",
           3000, // Waits 2s
         ]}
         wrapper="div"
