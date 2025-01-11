@@ -15,6 +15,10 @@ const Banner = () => {
           2000,
           "Web Designer",
           3000, // Waits 2s
+          "",
+          2000,
+          "Youtuber",
+          3000, // Waits 2s
         ]}
         wrapper="div"
         speed={5}
