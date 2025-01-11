@@ -45,13 +45,13 @@ const NavBar = () => {
             className="flex items-center transition ease-in-out delay-150"
           >
             <img src={crlogo} style={{ maxHeight: "60px" }} alt="logo"></img>
-            <h2
+            {/* <h2
               className={` text-white text-xl font-bold ${
                 scrolled ? "hidden" : "block"
               }`}
             >
               CodeRahul
-            </h2>
+            </h2> */}
           </a>
           <div className="nav-collapse flex items-center flex-grow-1 msx:hidden">
             <div className="menu-holder ml-auto" onClick={menuclick}>
